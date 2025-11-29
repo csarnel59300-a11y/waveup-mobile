@@ -1,5 +1,9 @@
-export default (req, res) => {
-  const html = `<!DOCTYPE html><html lang="fr"><head><meta charset="UTF-8"><title>Conditions d'Utilisation - WaveUp</title><style>body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI','Roboto',sans-serif;max-width:900px;margin:0 auto;padding:40px 20px;color:#333;background:linear-gradient(135deg,#667eea 0%,#764ba2 100%)}.container{background:white;border-radius:12px;padding:40px}h1{color:#667eea}h2{color:#764ba2}</style></head><body><div class="container"><h1>Conditions d'Utilisation</h1><h2>1. Description</h2><p>WaveUp analyse votre compte TikTok avec l'IA.</p><h2>2. Tarifs</h2><p>Gratuit, Premium 4.99€/mois, Pro 20€/mois.</p><h2>3. Contact</h2><p>support@waveup.app</p></div></body></html>`;
-  res.setHeader('Content-Type','text/html;charset=utf-8');
+import fs from 'fs';
+import path from 'path';
+
+export default function handler(req, res) {
+  const filePath = path.join(process.cwd(), 'public', 'terms.html');
+  const html = fs.readFileSync(filePath, 'utf8');
+  res.setHeader('Content-Type', 'text/html; charset=utf-8');
   res.status(200).send(html);
-};
+}
