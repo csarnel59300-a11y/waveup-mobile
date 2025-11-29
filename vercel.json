@@ -3,12 +3,11 @@
   "routes": [
     {
       "src": "/privacy",
-      "dest": "/api/privacy.js"
+      "dest": "/public/privacy.html"
     },
     {
       "src": "/terms",
-      "dest": "/api/terms.js"
-    },
-    {
-      "src": "/(.*)",
-      "dest": "/index.html"
+      "dest": "/public/terms.html"
+    }
+  ]
+}
