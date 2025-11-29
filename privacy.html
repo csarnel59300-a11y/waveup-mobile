@@ -1,9 +1,9 @@
-<!DOCTYPE html>
-<html>
-  <head><title>Politique de confidentialité</title></head>
-  <body>
-    <h1>Politique de confidentialité</h1>
-    <p>WaveUp ne collecte aucune donnée personnelle sans consentement. Les contenus générés sont temporaires et ne sont pas partagés avec des tiers.</p>
-    <p>Ce site est géré par WaveUp. Contact : waveup.app@gmail.com</p>
-  </body>
-</html>
+import fs from 'fs';
+import path from 'path';
+
+export default function handler(req, res) {
+  const filePath = path.join(process.cwd(), 'public', 'privacy.html');
+  const html = fs.readFileSync(filePath, 'utf8');
+  res.setHeader('Content-Type', 'text/html; charset=utf-8');
+  res.status(200).send(html);
+}
