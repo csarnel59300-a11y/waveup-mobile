@@ -8,9 +8,6 @@
       "android": {
         "buildType": "app-bundle",
         "credentialsSource": "remote"
-      },
-      "env": {
-        "EXPO_PUBLIC_BACKEND_URL": "https://waveup.vercel.app"
       }
     },
     "preview": {
