@@ -3,12 +3,10 @@
     "name": "WaveUp",
     "slug": "waveup",
     "version": "1.0.0",
-    "sdkVersion": "54.0.0",
     "platforms": ["ios", "android", "web"],
     "orientation": "portrait",
     "scheme": "waveup",
     "userInterfaceStyle": "automatic",
-    "newArchEnabled": true,
     "splash": {
       "backgroundColor": "#0a0a0f"
     },
