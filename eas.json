@@ -7,12 +7,18 @@
     "production": {
       "android": {
         "buildType": "app-bundle",
-        "credentialsSource": "remote"
+        "credentialsSource": "local"
+      },
+      "env": {
+        "EXPO_PUBLIC_BACKEND_URL": "https://waveup.vercel.app"
       }
     },
     "preview": {
       "android": {
         "buildType": "apk"
+      },
+      "env": {
+        "EXPO_PUBLIC_BACKEND_URL": "https://waveup.vercel.app"
       }
     },
     "development": {
@@ -21,6 +27,11 @@
     }
   },
   "submit": {
-    "production": {}
+    "production": {
+      "android": {
+        "serviceAccountKeyPath": "./google-service-account.json",
+        "track": "internal"
+      }
+    }
   }
 }
