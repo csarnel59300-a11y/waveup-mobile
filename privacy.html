@@ -3,27 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Politique de confidentialite - WaveUp</title>
+    <title>Politique de Confidentialité - WaveUp</title>
     <style>
-        body { font-family: Arial, sans-serif; max-width: 800px; margin: 50px auto; padding: 20px; line-height: 1.6; }
-        h1 { color: #00D4FF; }
-        h2 { color: #333; margin-top: 30px; }
+        body { font-family: -apple-system; max-width: 900px; margin: 0 auto; padding: 40px 20px; color: #333; background: linear-gradient(135deg, #00D4FF 0%, #8B5CF6 100%); }
+        .container { background: white; border-radius: 12px; padding: 40px; box-shadow: 0 10px 40px rgba(0,0,0,0.1); }
+        h1 { color: #00D4FF; margin-top: 0; }
+        h2 { color: #8B5CF6; }
+        p { line-height: 1.6; color: #555; }
     </style>
 </head>
 <body>
-    <h1>Politique de confidentialite - WaveUp</h1>
-    <p>Derniere mise a jour : Decembre 2024</p>
-    <h2>1. Donnees collectees</h2>
-    <p>Nous collectons uniquement les donnees necessaires au fonctionnement du service : informations TikTok publiques et statistiques de compte.</p>
-    <h2>2. Utilisation des donnees</h2>
-    <p>Vos donnees sont utilisees pour afficher vos statistiques et generer des recommandations personnalisees.</p>
-    <h2>3. Partage des donnees</h2>
-    <p>Nous ne vendons jamais vos donnees. Elles ne sont pas partagees avec des tiers.</p>
-    <h2>4. Securite</h2>
-    <p>Nous utilisons des mesures de securite pour proteger vos informations.</p>
-    <h2>5. Vos droits</h2>
-    <p>Vous pouvez demander la suppression de vos donnees a tout moment.</p>
-    <h2>6. Contact</h2>
-    <p>Email : contact@waveup.app</p>
+    <div class="container">
+        <h1>Politique de Confidentialité</h1>
+        <h2>WaveUp - Analyse TikTok par IA</h2>
+        
+        <h3>1. Collecte de données</h3>
+        <p>Nous collectons via OAuth TikTok:</p>
+        <ul>
+            <li>Nom d'utilisateur TikTok</li>
+            <li>ID utilisateur TikTok</li>
+            <li>Statistiques de compte (followers, likes, vidéos)</li>
+        </ul>
+        
+        <h3>2. Utilisation des données</h3>
+        <p>Vos données sont utilisées pour générer des suggestions d'IA via Gemini API pour optimiser votre contenu TikTok</p>
+        
+        <h3>3. Sécurité</h3>
+        <p>Vos données sont stockées de manière sécurisée dans Firebase Firestore avec chiffrement end-to-end</p>
+        
+        <h3>4. Contact</h3>
+        <p><strong>Email:</strong> support@waveup.app</p>
+        
+        <p style="margin-top: 40px; color: #999; font-size: 12px;">Dernière mise à jour: 30 novembre 2025</p>
+    </div>
 </body>
 </html>
